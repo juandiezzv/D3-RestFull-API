@@ -1,0 +1,179 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Nikola Tesla",
+  "age": 80,
+  "email": "nikolatesla@email.com"
+}
+
+###
+POST http://localhost:9000/api/mentors HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Nikola ",
+  "apellido":"Tesla",
+  "dni":"9779784",
+  "profesion":"mentor",
+  "email": "nikolatesla@email.com",
+  "cargo": "hello"
+}
+
+
+###
+GET http://localhost:9000/api/mentors HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6179e74b002fccdc304735c3 HTTP/1.1
+
+###
+GET http://localhost:9000/api/mentor/6179eb4b2e4cba7e76d8fab3 HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/users/6179e74b002fccdc304735c3 HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/mentor/6179ed3cf9e82622e0dc38de HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6137e2412e329eb206b0073c HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Conway",
+  "age": 80,
+  "email": "johnconway@email.com"
+}
+
+
+###
+put http://localhost:9000/api/mentor/6179ed3ef9e82622e0dc38e0 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Nikola1 ",
+  "apellido":"Tesla1",
+  "dni":"9779784",
+  "profesion":"mentor",
+  "email": "nikolatesla@email.com",
+  "cargo": "hello"
+}
+
+################################################
+
+###
+POST http://localhost:9000/api/mentoria HTTP/1.1
+Content-Type: application/json
+
+{
+  "comentario": "Nikola ",
+  "plan_estrategico":"Tesla",
+  "plan_accion":"9779784"
+}
+
+
+###
+GET http://localhost:9000/api/mentoria HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/mentoria/6179f0fdb6bccb5a16c78e2d HTTP/1.1
+
+
+###
+DELETE http://localhost:9000/api/mentoria/6179f0fdb6bccb5a16c78e2d HTTP/1.1
+
+
+###
+put http://localhost:9000/api/mentoria/6179f1e7b6bccb5a16c78e30 HTTP/1.1
+Content-Type: application/json
+
+{
+  "comentario": "Nikola1 ",
+  "plan_estrategico":"Tesla1",
+  "plan_accion":"9779784"
+}
+
+################################################
+
+###
+POST http://localhost:9000/api/mentorizado HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Nikola ",
+  "apellido":"Tesla",
+  "dni":"9779784",
+  "codigo":"172412454",
+  "email": "nikolatesla@email.com"
+}
+
+
+###
+GET http://localhost:9000/api/mentorizado HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/mentorizado/6179f5f67627a9d4b3ab724c HTTP/1.1
+
+
+###
+DELETE http://localhost:9000/api/mentorizado/6179f5f67627a9d4b3ab724c HTTP/1.1
+
+
+###
+put http://localhost:9000/api/mentorizado/6179f6537627a9d4b3ab7251 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Nikola1 ",
+  "apellido":"Tesla1",
+  "dni":"9779784",
+  "codigo":"172412454",
+  "email": "nikolatesla@email.com"
+}
+
+
+################################################
+
+###
+POST http://localhost:9000/api/carrera HTTP/1.1
+Content-Type: application/json
+
+{
+  "informacion": "Nikola ",
+  "descripcion":"Tesla",
+  "habilidades":"9779784",
+  "grado":"172412454"
+}
+
+
+###
+GET http://localhost:9000/api/carrera HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/mentorizado/6179f5f67627a9d4b3ab724c HTTP/1.1
+
+
+###
+DELETE http://localhost:9000/api/mentorizado/6179f5f67627a9d4b3ab724c HTTP/1.1
+
+
+###
+put http://localhost:9000/api/mentorizado/6179f6537627a9d4b3ab7251 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Nikola1 ",
+  "apellido":"Tesla1",
+  "dni":"9779784",
+  "codigo":"172412454",
+  "email": "nikolatesla@email.com"
+}
